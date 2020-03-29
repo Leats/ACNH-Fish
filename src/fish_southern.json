@@ -1,0 +1,482 @@
+[
+    [
+      "Bitterling",
+      "River",
+      5,
+      9
+    ],
+    [
+      "Pale chub",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Crucian carp",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Dace",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Carp",
+      "Pond",
+      1,
+      12
+    ],
+    [
+      "Koi",
+      "Pond",
+      1,
+      12
+    ],
+    [
+      "Goldfish",
+      "Pond",
+      1,
+      12
+    ],
+    [
+      "Pop-eyed goldfish",
+      "Pond",
+      1,
+      12
+    ],
+    [
+      "Ranchu goldfish",
+      "Pond",
+      1,
+      12
+    ],
+    [
+      "Killifish",
+      "Pond",
+      10,
+      2
+    ],
+    [
+      "Crawfish",
+      "Pond",
+      10,
+      3
+    ],
+    [
+      "Soft-shelled turtle",
+      "River",
+      2,
+      3
+    ],
+    [
+      "Snapping turtle",
+      "River",
+      10,
+      4
+    ],
+    [
+      "Tadpole",
+      "Pond",
+      9,
+      1
+    ],
+    [
+      "Frog",
+      "Pond",
+      11,
+      2
+    ],
+    [
+      "Freshwater goby",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Loach",
+      "River",
+      9,
+      11
+    ],
+    [
+      "Catfish",
+      "Pond",
+      11,
+      4
+    ],
+    [
+      "Giant snakehead",
+      "Pond",
+      12,
+      2
+    ],
+    [
+      "Bluegill",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Yellow perch",
+      "River",
+      4,
+      9
+    ],
+    [
+      "Black bass",
+      "River",
+      1,
+      12
+    ],
+    [
+      "Tilapia",
+      "River",
+      12,
+      4
+    ],
+    [
+      "Pike",
+      "River",
+      3,
+      6
+    ],
+    [
+      "Pond smelt",
+      "River",
+      6,
+      8
+    ],
+    [
+      "Sweetfish",
+      "River",
+      1,
+      3
+    ],
+    [
+      "Cherry salmon",
+      "River (Clifftop)  Pond",
+      9,
+      5
+    ],
+    [
+      "Char",
+      "River (Clifftop)",
+      9,
+      5
+    ],
+    [
+      "Golden trout",
+      "River (Clifftop)",
+      9,
+      11
+    ],
+    [
+      "Stringfish",
+      "River (Clifftop)",
+      6,
+      9
+    ],
+    [
+      "Salmon",
+      "River (Mouth)",
+      3,
+      3
+    ],
+    [
+      "King salmon",
+      "River (Mouth)",
+      3,
+      3
+    ],
+    [
+      "Mitten crab",
+      "River",
+      3,
+      5
+    ],
+    [
+      "Guppy",
+      "River",
+      10,
+      5
+    ],
+    [
+      "Nibble fish",
+      "River",
+      11,
+      3
+    ],
+    [
+      "Angelfish",
+      "River",
+      11,
+      4
+    ],
+    [
+      "Betta",
+      "River",
+      11,
+      4
+    ],
+    [
+      "Neon tetra",
+      "River",
+      10,
+      5
+    ],
+    [
+      "Rainbowfish",
+      "River",
+      11,
+      4
+    ],
+    [
+      "Piranha",
+      "River",
+      12,
+      3
+    ],
+    [
+      "Arowana",
+      "River",
+      12,
+      3
+    ],
+    [
+      "Dorado",
+      "River",
+      12,
+      3
+    ],
+    [
+      "Gar",
+      "Pond",
+      12,
+      3
+    ],
+    [
+      "Arapaima",
+      "River",
+      12,
+      3
+    ],
+    [
+      "Saddled bichir",
+      "River",
+      12,
+      3
+    ],
+    [
+      "Sturgeon",
+      "River (Mouth)",
+      3,
+      9
+    ],
+    [
+      "Sea butterfly",
+      "Sea",
+      6,
+      9
+    ],
+    [
+      "Sea horse",
+      "Sea",
+      10,
+      5
+    ],
+    [
+      "Clown fish",
+      "Sea",
+      10,
+      3
+    ],
+    [
+      "Surgeonfish",
+      "Sea",
+      10,
+      3
+    ],
+    [
+      "Butterfly fish",
+      "Sea",
+      10,
+      3
+    ],
+    [
+      "Napoleonfish",
+      "Sea",
+      1,
+      2
+    ],
+    [
+      "Zebra turkeyfish",
+      "Sea",
+      10,
+      5
+    ],
+    [
+      "Blowfish",
+      "Sea",
+      5,
+      8
+    ],
+    [
+      "Puffer fish",
+      "Sea",
+      1,
+      3
+    ],
+    [
+      "Anchovy",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Horse mackerel",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Barred knifejaw",
+      "Sea",
+      9,
+      5
+    ],
+    [
+      "Sea bass",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Red snapper",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Dab",
+      "Sea",
+      4,
+      10
+    ],
+    [
+      "Olive flounder",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Squid",
+      "Sea",
+      6,
+      2
+    ],
+    [
+      "Moray eel",
+      "Sea",
+      2,
+      4
+    ],
+    [
+      "Ribbon eel",
+      "Sea",
+      12,
+      4
+    ],
+    [
+      "Tuna",
+      "Pier",
+      5,
+      10
+    ],
+    [
+      "Blue marlin",
+      "Pier",
+      5,
+      10
+    ],
+    [
+      "Giant trevally",
+      "Pier",
+      11,
+      4
+    ],
+    [
+      "Mahi-mahi",
+      "Pier",
+      11,
+      4
+    ],
+    [
+      "Ocean sunfish",
+      "Sea",
+      1,
+      3
+    ],
+    [
+      "Ray",
+      "Sea",
+      2,
+      5
+    ],
+    [
+      "Saw shark",
+      "Sea",
+      12,
+      3
+    ],
+    [
+      "Hammerhead shark",
+      "Sea",
+      12,
+      3
+    ],
+    [
+      "Great white shark",
+      "Sea",
+      12,
+      3
+    ],
+    [
+      "Whale shark",
+      "Sea",
+      12,
+      3
+    ],
+    [
+      "Suckerfish",
+      "Sea",
+      12,
+      3
+    ],
+    [
+      "Football fish",
+      "Sea",
+      5,
+      9
+    ],
+    [
+      "Oarfish",
+      "Sea",
+      6,
+      11
+    ],
+    [
+      "Barreleye",
+      "Sea",
+      1,
+      12
+    ],
+    [
+      "Coelacanth",
+      "Sea (Rainy Days)",
+      1,
+      12
+    ]
+  ]
