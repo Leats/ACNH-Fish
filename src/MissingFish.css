@@ -1,44 +1,44 @@
 .MissingList {
-    width: 100%;
-    list-style: none;
-    margin: auto;
-    text-align: center;
-    align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  align-items: center;
 }
 .MissingFish ul {
-    list-style: none;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 10px;
-    justify-content: center;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+  justify-content: center;
 }
 
 .MissingFish li {
-    float: left;
+  float: left;
 }
 
 .InnerList li {
-    padding: 5px;
-    display: inline-block;
-    background-color: rgb(235, 235, 235);
+  padding: 5px;
+  display: inline-block;
+  background-color: rgb(235, 235, 235);
 }
 
 .FishWrap {
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .FishWrapWhere {
-    width: 150px;
-    height: 50px;
-    padding-top: 6px;
+  width: 150px;
+  height: 50px;
+  padding-top: 6px;
 }
 
 .FishWrapMonth {
-    width: 180px;
-    height: 50px;
-    padding-top: 6px;
+  width: 180px;
+  height: 50px;
+  padding-top: 6px;
 }
