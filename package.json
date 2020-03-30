@@ -1,5 +1,5 @@
 {
-  "homepage": "git@github.com:Leats/ACNH-Fish.git",
+  "homepage": "https://Leats.github.io/ACNH-Fish",
   "name": "acnhfish",
   "version": "0.1.0",
   "private": true,
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "prettier": "2.0.2"
   }
 }

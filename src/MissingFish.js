@@ -3,6 +3,21 @@ import { Label } from 'semantic-ui-react'
 import './MissingFish.css'
 
 class MissingFish extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            currentHour: new Date().getHours()
+        }
+    }
+
+    componentDidMount(){
+        this.interval = setInterval(() => this.setState({ currentHour: new Date().getHours() }), 60000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
+
     render(){
         const isCatchable = (fish) => {
             const start = fish[2]
@@ -18,6 +33,34 @@ class MissingFish extends React.Component {
             } else {
                 return true
             }
+        }
+
+        const convert12to24 = time => {
+            let [hour, modifier] = time.split(' ');
+            if (hour === '12' && modifier === 'PM') {
+                hour = '00';
+            }
+            if (modifier === 'PM') {
+                hour = parseInt(hour, 10) + 12;
+            }
+            return hour
+        }
+
+        const rightTime = fish => {
+            if (fish[5] === "All day") {return true}
+            const times = fish[5].split(" & ")
+            let catchable = false
+            times.forEach(time => {
+                let [start, end] = time.split(" - ")
+                start = convert12to24(start)
+                end = convert12to24(end)
+                if (start < end) {
+                    if (this.state.currentHour >= start && this.state.currentHour < end) {catchable = true}
+                } else {
+                    if (this.state.currentHour >= start || this.state.currentHour < end) {catchable = true}
+                }
+            })
+            return catchable
         }
 
         const sortFish = (array, n) => {
@@ -89,10 +132,12 @@ class MissingFish extends React.Component {
                     <li key={fish[0]}>
                         <ul className="InnerList">
                             <li><div className="FishWrap"><b>{fish[0]}</b></div></li>
-                            <li><div className="FishWrap">{fish[1]}</div></li>
-                            <li><div className="FishWrapMonth">{numberToMonth(fish[2])} - {numberToMonth(fish[3])}</div></li>
+                            <li><div className="FishWrapWhere">{fish[1]} <div style={{fontSize: 12, color: 'grey'}}>(size {fish[4]})</div></div></li>
+                            <li><div className="FishWrapMonth">{numberToMonth(fish[2])} - {numberToMonth(fish[3])}
+                                <div style={{fontSize: 12, color: 'grey'}}>{fish[5]}</div></div>
+                            </li>
                             <li><div className="FishWrap">
-                                {isCatchable(fish) && (<Label color="green" horizontal>Catchable</Label>)}
+                                {isCatchable(fish) && (<Label color={rightTime(fish) ? "green" : "yellow"} horizontal>Catchable</Label>)}
                                 {!isCatchable(fish) && (<Label color="grey" horizontal>Not catchable</Label>)}
                             </div></li>
                         </ul>

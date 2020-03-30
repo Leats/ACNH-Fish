@@ -1,6 +1,7 @@
 import json
 import os.path
 import re
+import string
 
 import requests
 from bs4 import BeautifulSoup
@@ -35,15 +36,15 @@ for fish in nfish_table:
         nfish_list.append(current_fish)
 
     image = fish.find('img')
-    if image and not os.path.isfile(os.getcwd() + '/src/images/' + current_fish[0] + '.png'):
+    if image and not os.path.isfile(os.getcwd() + '/src/images/' + string.capwords(current_fish[0]) + '.png'):
         image_url = image['data-src']
         img = Image.open(requests.get(image_url, stream=True).raw)
-        img.save(os.getcwd() + '/src/images/' + re.sub('[^A-Za-z0-9 -]+', '', current_fish[0]) + '.png', 'PNG')
+        img.save(os.getcwd() + '/src/images/' + re.sub('[^A-Za-z0-9 -]+', '', string.capwords(current_fish[0])) + '.png', 'PNG')
 
 nedited_list = []
 for fish in nfish_list:
     startmonth, endmonth = get_month_span(fish)
-    nedited_list.append([fish[0], fish[3], startmonth, endmonth])
+    nedited_list.append([string.capwords(fish[0]), fish[3], startmonth, endmonth, fish[4], fish[5]])
 
 with open(os.getcwd() + '/src/fish_northern.json', 'w') as outfile:
     json.dump(nedited_list, outfile)
@@ -63,7 +64,7 @@ for fish in sfish_table:
 sedited_list = []
 for fish in sfish_list:
     startmonth, endmonth = get_month_span(fish)
-    sedited_list.append([fish[0], fish[3], startmonth, endmonth])
+    sedited_list.append([string.capwords(fish[0]), fish[3], startmonth, endmonth, fish[4], fish[5]])
 
 with open(os.getcwd() + '/src/fish_southern.json', 'w') as outfile:
     json.dump(sedited_list, outfile)

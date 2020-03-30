@@ -50,7 +50,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <span><a href="https://twitter.com/LeatsHere">Questions? Ask me on twitter!</a>Last updated: March 28 2020</span>
+          <span><a href="https://twitter.com/LeatsHere">Questions? Ask me on twitter!</a>Last updated: March 30 2020</span>
         </header>
         <div id="welcome-text">
           Hello! <br/>
